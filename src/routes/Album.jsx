@@ -21,7 +21,7 @@ export default function Album() {
       <p>{data.class}</p>
 
       {data.gallery.map((img, i) => (
-        <img key={i} src={img} width="200" />
+        <img key={i} src={img} width="200" alt={`Gallery image ${i + 1}`} />
       ))}
     </div>
   );
